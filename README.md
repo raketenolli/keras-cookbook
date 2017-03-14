@@ -65,7 +65,7 @@ It's possible that a dataset is not split into training, validation and test dat
 
 ### One-Hot-Encoding
 
-For classification problems labels are usually represented by integer numbers, where a specific number is arbitrarily assigned to a certain label or class. Neural networks usually have exactly as many nodes in the final layer as there are classes. To facilitate comparing the predicted values with the known labels, so-called one-hot-encoding is used. Labels such as `[0, 1, 2, 2, 1, 2]` are converted into a two-dimensional array, where the respective position is set to `1` and all the others are set to `0`: [[1, 0, 0], [0, 1, 0], [0, 1, 0], [0, 0, 1], [0, 0, 1] ...].
+For classification problems labels are usually represented by integer numbers, where a specific number is arbitrarily assigned to a certain label or class. Neural networks usually have exactly as many nodes in the final layer as there are classes. To facilitate comparing the predicted values with the known labels, so-called one-hot-encoding is used. Labels such as `[0, 1, 2, 2, 1, 2]` are converted into a two-dimensional array, where the respective position is set to `1` and all the others are set to `0`: `[[1, 0, 0], [0, 1, 0], [0, 1, 0], [0, 0, 1], [0, 0, 1] ...]`.
 
 This encoding can be realized as part of a Tensorflow graph, but since we are focussing on Keras here, we use the Sklearn library.
 
